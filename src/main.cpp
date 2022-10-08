@@ -26,10 +26,10 @@
 
 void setup()
 {
-
+    //TODO Config
 }
 
 void loop()
 {
-
+    //TODO program
 }
