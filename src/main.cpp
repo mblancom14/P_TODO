@@ -78,5 +78,5 @@ void loop()
     /* Se actualiza la información de la pantalla */
     ActualizaPantalla ();
 
-    delay (10);
+    delay (1);
 }
