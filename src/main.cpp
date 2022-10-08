@@ -46,7 +46,8 @@ void ActualizaPantalla (void)
     oled.setTextSize (1);
     oled.setCursor (0, 1);
     oled.print ("-Imprimir carcasa P-TODO\n");
-    oled.print ("-Hacer commit ScreenImplementation");
+    oled.print ("-Hacer commit ScreenImplementation\n");
+    oled.print ("-Otro texto");
     oled.display ();
 }
 
