@@ -45,8 +45,8 @@ void ActualizaPantalla (void)
     /* Se imprime el valor de humedad */
     oled.setTextSize (1);
     oled.setCursor (0, 1);
-    oled.print ("@Imprimir carcasa P-TODO\n");
-    oled.print ("@Hacer commit ScreenImplementation");
+    oled.print ("-Imprimir carcasa P-TODO\n");
+    oled.print ("-Hacer commit ScreenImplementation");
     oled.display ();
 }
 
