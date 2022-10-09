@@ -38,13 +38,12 @@ Adafruit_SSD1306 oled(ANCHO_OLED, ALTO_OLED, &Wire, OLED_RESET);
 
 void ActualizaPantalla (void)
 {
-
     /* Se limpia la pantalla */
     oled.clearDisplay ();
 
     /* Se imprime el valor de humedad */
     oled.setTextSize (1);
-    oled.setCursor (0, 1);
+    oled.setCursor (0, 0);
     oled.print ("-Imprimir carcasa P-TODO\n");
     oled.print ("-Hacer commit ScreenImplementation\n");
     oled.print ("-Otro texto");
@@ -76,8 +75,24 @@ void setup()
 
 void loop()
 {
-    /* Se actualiza la información de la pantalla */
-    ActualizaPantalla ();
+    // /* Se actualiza la información de la pantalla */
+    // ActualizaPantalla ();
+
+    oled.clearDisplay();
+    oled.setTextSize(1);
+    oled.setCursor(0, 0);
+    oled.setTextColor(SSD1306_WHITE);
+    oled.println("Menu test");
+    oled.println("");
+
+    oled.setTextColor(SSD1306_BLACK, SSD1306_WHITE);
+    oled.println("Opcion 1");
+    oled.setTextColor(SSD1306_WHITE);
+    oled.println("Opcion 2");
+    // oled.setTextColor(SSD1306_WHITE);
+    // oled.println("Opcion 3");
+
+    oled.display ();
 
     delay (1);
 }
